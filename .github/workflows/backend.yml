@@ -23,6 +23,7 @@ jobs:
             cd ~/MERN-AWS/Backend
             git fetch origin
             git reset --hard origin/main
-            npm install 
+            npm install
+            pm2 restart all
             sudo pm2 reload index || sudo pm2 start index.js --name index
             sudo pm2 save
