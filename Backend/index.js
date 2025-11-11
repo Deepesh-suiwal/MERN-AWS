@@ -22,7 +22,7 @@ app.use(cors(corsOptions));
 
 app.get("/health", (req, res) => res.status(200).send("OK"));
 app.get("/", (req, res) =>
-  res.status(200).send("Backend deployed successfully on AWS.completed CI/CD integration.Deepesh")
+  res.status(200).send("Backend deployed successfully on AWS.completed CI/CD integration.Manish")
 );
 
 app.use("/api/auth", authRoutes);
