@@ -10,6 +10,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      VITE_BACKEND_URL: https://api.hackoinvent.com
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
